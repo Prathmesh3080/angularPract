@@ -1,12 +1,24 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
+import { UserComponent } from "./user/user.component";
+import { InterpolationComponent } from './interpolation/interpolation.component';
+import { EventsComponent } from './events/events.component';
+import { StyleBindingComponent } from './style-binding/style-binding.component';
+import { TemplateReferenceComponentComponent } from './template-reference-component/template-reference-component.component';
 
 @Component({
-  selector: 'app-root',
-  standalone: true,
-  imports: [RouterOutlet],
-  templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+    selector: 'app-root',
+    standalone: true,
+    templateUrl: './app.component.html',
+    styleUrl: './app.component.css',
+    imports: [
+              RouterOutlet,
+               UserComponent, 
+               InterpolationComponent, 
+               EventsComponent,
+               StyleBindingComponent,
+               TemplateReferenceComponentComponent
+              ]
 })
 export class AppComponent {
   title = 'angularPract';
