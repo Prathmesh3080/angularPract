@@ -1,4 +1,14 @@
 
-<input type="text" #nameShow placeholder="Enter Your name" name="myName">
+<!-- <input type="text" #nameShow placeholder="Enter Your name" name="myName">
 <input type="button" (click)="getName(nameShow.value)" value="Click">
+<h2>{{ displayName }}</h2> -->
+
+
+<input type="text" #fnameShow placeholder="Enter first name" name="fName">
+<br>
+<br>
+<input type="text" #lnameShow placeholder="Enter last name" name="lName">
+<br>
+<br>
+<input type="button" (click)="getName(fnameShow.value, lnameShow.value)" value="Click">
 <h2>{{ displayName }}</h2>

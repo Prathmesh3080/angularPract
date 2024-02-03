@@ -5,6 +5,7 @@ import { InterpolationComponent } from './interpolation/interpolation.component'
 import { EventsComponent } from './events/events.component';
 import { StyleBindingComponent } from './style-binding/style-binding.component';
 import { TemplateReferenceComponentComponent } from './template-reference-component/template-reference-component.component';
+import { CounterComponent } from "./counter/counter.component";
 
 @Component({
     selector: 'app-root',
@@ -12,13 +13,14 @@ import { TemplateReferenceComponentComponent } from './template-reference-compon
     templateUrl: './app.component.html',
     styleUrl: './app.component.css',
     imports: [
-              RouterOutlet,
-               UserComponent, 
-               InterpolationComponent, 
-               EventsComponent,
-               StyleBindingComponent,
-               TemplateReferenceComponentComponent
-              ]
+        RouterOutlet,
+        UserComponent,
+        InterpolationComponent,
+        EventsComponent,
+        StyleBindingComponent,
+        TemplateReferenceComponentComponent,
+        CounterComponent
+    ]
 })
 export class AppComponent {
   title = 'angularPract';

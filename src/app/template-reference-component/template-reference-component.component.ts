@@ -14,9 +14,14 @@ export class TemplateReferenceComponentComponent {
   //   console.log(value);
   // }
 
+  // public displayName = '';
+  // getName(value:string){
+  //   this.displayName = value;
+  // }
+
   public displayName = '';
-  getName(value:string){
-    this.displayName = value;
+  getName(value:string, value2:string){
+    this.displayName = value + " " + value2;
   }
 
 }
